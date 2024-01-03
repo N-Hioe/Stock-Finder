@@ -30,7 +30,7 @@ export default function CenteredTabs(API_KEY) {
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs value={tabValue} onChange={handleChange} centered>
         <Tab label="Stock Open/Close" />
-        <Tab label="Item Two" />
+        <Tab label="Stock News" />
         <Tab label="Item Three" />
       </Tabs>
       {
