@@ -1,5 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+
 import './App.css';
 import CenteredTabs from './CenteredTabs';
 
@@ -10,7 +13,9 @@ const App = () => {
     }, []);
 
     return (
-        <CenteredTabs API_KEY={ API_KEY }/>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <CenteredTabs API_KEY={ API_KEY }/>
+        </LocalizationProvider>
     );
 }
 

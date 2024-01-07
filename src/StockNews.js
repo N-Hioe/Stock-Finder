@@ -31,8 +31,6 @@ const StockNews = ({ API_KEY }) => {
         fetchNews();
     }, [API_KEY]);
 
-    console.log(news);
-
     return(
         <div className="card-container">
             {
@@ -43,7 +41,7 @@ const StockNews = ({ API_KEY }) => {
                             () => {
                                 window.open(story.article_url, "_blank")
                             }
-                        } onHover>
+                        }>
                           <CardMedia
                             component="img"
                             height="200"
