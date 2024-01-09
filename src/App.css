@@ -21,3 +21,25 @@
     line-clamp: 4;
     overflow: hidden;
 }
+
+.graph-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 50px;
+    place-content: center;
+}
+
+.profile-container-desc {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    padding-top: 10px;
+    place-content: center;
+}
+
+.profile-container-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    place-content: center
+}

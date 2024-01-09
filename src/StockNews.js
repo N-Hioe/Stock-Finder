@@ -47,6 +47,7 @@ const StockNews = ({ API_KEY }) => {
                             height="200"
                             image={ story.image_url }
                             alt={ story.title }
+                            loading="lazy"
                           />
                           <CardContent>
                             <Typography gutterBottom variant="h5" component="div" className="card-text">
